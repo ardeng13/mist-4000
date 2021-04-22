@@ -1,0 +1,35 @@
+#will you buy a laptop?
+income=int(input("Type in the value of your yearly income:"))
+
+if (income<=25000):
+  creditRating=int(input("Type in your credit rating:"))
+  if (551 <= creditRating <= 700) :
+    print("yes, you will likely purchase a laptop")
+  elif (701<=creditRating):
+    age=int(input("Type in your age:"))
+    if (age>40) :
+        print("no, you will not likely purchase a laptop ")
+    else:
+        print("yes, you will likely purchase a laptop")
+elif (25001<=income<=50000):
+  student= input("Are you a student?Y/N")
+  if (student == "Y"):
+    print("yes, you will likely purchase a laptop")
+  else:
+    age=int(input("Type in your age:"))
+    if (age<= 30):
+      print("no, you will not likely purchase a laptop")
+    elif (31<=age<=40):
+      print("yes, you will likely purchase a laptop")
+    elif (age>40):
+      creditRating=int(input("Type in your credit rating:"))
+      if (551<= creditRating<=700):
+        print("yes, you will likely purchase a laptop")
+      if (701<=creditRating):
+        print("no, you will not likely purchase a laptop")
+elif (50001<=income):
+ age=int(input("Type in your age:"))
+ if (age<=30):
+   print("no, you will not likely purchase a laptop")
+ elif (31<=age<=40) :
+    print("yes, you will likely purchase a laptop")
